@@ -36,65 +36,137 @@
 // })
 
 //PROMISESSSSSSSSSSSSSSSSSSSSSSSSSS
+// function orderFood() {
+//   const promise = new Promise((resolve, reject) => {
+//     setTimeout(() => {
+//       console.log("Placing Order...");
+//       //   resolve("Order Accepted Successfully");
+//       reject("site is under maintenance");
+//     }, 3000);
+//   });
+//   return promise;
+// }
+// function foodPrepared(orderStatus) {
+//   const promise = new Promise((resolve, reject) => {
+//     setTimeout(() => {
+//       console.log(orderStatus);
+//       resolve("Food is Preparing");
+//     }, 3000);
+//   });
+//   return promise;
+// }
+// function deliverFood(foodStatus) {
+//   const promise = new Promise((resolve, reject) => {
+//     setTimeout(() => {
+//       console.log(foodStatus);
+//       resolve("Food prepared..");
+//     }, 2000);
+//   });
+//   return promise;
+// }
+// function deliverFood(foodStatus) {
+//   const promise = new Promise((resolve, reject) => {
+//     setTimeout(() => {
+//       console.log(foodStatus);
+//       resolve("Food prepared..");
+//     }, 2000);
+//   });
+//   return promise;
+// }
+// function deliveryStatus(deliveryStatus) {
+//   const promise = new Promise((resolve, reject) => {
+//     setTimeout(() => {
+//       console.log(deliveryStatus);
+//       resolve("Delivery On the way..");
+//     }, 2000);
+//   });
+//   return promise;
+// }
+// orderFood()
+//   .then(function (result) {
+//     return foodPrepared(result);
+//   })
+//   .then(function (result) {
+//     return deliverFood(result);
+//   })
+//   .then(function (result) {
+//     return deliveryStatus(result);
+//   })
+//   .then(function (result) {
+//     console.log(result);
+//   })
+//   .catch(function (error) {
+//     console.log(error);
+//   });
+
+//Async - await
 function orderFood() {
   const promise = new Promise((resolve, reject) => {
     setTimeout(() => {
       console.log("Placing Order...");
-      //   resolve("Order Accepted Successfully");
+      // resolve("Order Accepted Successfully");
       reject("site is under maintenance");
     }, 3000);
   });
   return promise;
 }
-function foodPrepared(orderStatus) {
+function foodPrepared() {
   const promise = new Promise((resolve, reject) => {
     setTimeout(() => {
-      console.log(orderStatus);
+      console.log("Food is preparing");
       resolve("Food is Preparing");
     }, 3000);
   });
   return promise;
 }
-function deliverFood(foodStatus) {
+function deliverFood() {
   const promise = new Promise((resolve, reject) => {
     setTimeout(() => {
-      console.log(foodStatus);
+      console.log("Food prepared..");
       resolve("Food prepared..");
     }, 2000);
   });
   return promise;
 }
-function deliverFood(foodStatus) {
+function deliveryStatus() {
   const promise = new Promise((resolve, reject) => {
     setTimeout(() => {
-      console.log(foodStatus);
-      resolve("Food prepared..");
-    }, 2000);
-  });
-  return promise;
-}
-function deliveryStatus(deliveryStatus) {
-  const promise = new Promise((resolve, reject) => {
-    setTimeout(() => {
-      console.log(deliveryStatus);
+      console.log("Delivery On the way..");
       resolve("Delivery On the way..");
     }, 2000);
   });
   return promise;
 }
-orderFood()
-  .then(function (result) {
-    return foodPrepared(result);
-  })
-  .then(function (result) {
-    return deliverFood(result);
-  })
-  .then(function (result) {
-    return deliveryStatus(result);
-  })
-  .then(function (result) {
-    console.log(result);
-  })
-  .catch(function (error) {
+
+async function orderingFoodOnline() {
+  //idhar hum har promise ka single handedly error sambhal rahe ha
+  try {
+    await orderFood();
+    console.log("2");
+  } catch (error) {
     console.log(error);
-  });
+  }
+  await foodPrepared();
+  console.log("3");
+  await deliverFood();
+  console.log("4");
+  await deliveryStatus();
+  console.log("end");
+  
+  //Agar ek bhi promise reject hua toh usse aage nahi chalega
+  // try {
+  //   await orderFood();
+  //   console.log("2");
+  //   await foodPrepared();
+  //   console.log("3");
+  //   await deliverFood();
+  //   console.log("4");
+  //   await deliveryStatus();
+  //   console.log("end");
+  // } catch (error) {
+  //   console.log(error);
+  // }
+}
+
+console.log("start");
+orderingFoodOnline();
