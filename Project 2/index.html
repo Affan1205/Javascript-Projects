@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Modal Project</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.css"
+      integrity="sha512-x9WwyMYBnlXMNQ6kQ/Lyzu1NqIhLQKL5Oq6xByfXuRj7s9CskyCbLv/1IjqzJmXwFXWr0ov6jBV7Qbc0hh9nHg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <style>
+      .circle2-animation {
+        animation: circle2 10s infinite linear;
+      }
+      @keyframes circle2 {
+        0% {
+          bottom: 7%;
+          right: 32%;
+        }
+        50% {
+          bottom: 5%;
+          right: 31%;
+        }
+        100% {
+          bottom: 7%;
+          right: 32%;
+        }
+      }
+      .circle1-animation {
+        animation: circle1 12s infinite linear;
+      }
+      @keyframes circle1 {
+        0% {
+          top: 5%;
+          left: 33%;
+        }
+        50% {
+          top: 5%;
+          left: 29%;
+          transform: scale(0.9);
+        }
+        100% {
+          top: 5%;
+          left: 33%;
+        }
+      }
+      .modal {
+        opacity: 0;
+        transition: all 0.2s linear;
+      }
+      .modal-visible {
+        opacity: 1;
+        transition: all 0.2s linear;
+        z-index: 1;
+      }
+    </style>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  </head>
+  <body>
+    <!-- wrapper -->
+    <div class="w-[100vw] h-[100vh] bg-black overflow-x-hidden overflow-y-auto flex items-center justify-center relative">
+      <!-- Modal container -->
+      <div id="modal-div" class="modal w-[100vw] h-[100vh] bg-white/20 absolute flex items-center justify-center">
+        <!-- content container -->
+        <div class="w-[450px] border border-slate-400 bg-black/50 backdrop-blur-md p-4 rounded-xl">
+          <!-- Heading -->
+          <div class="flex flex-row justify-between border-b-2 border-slate-400 pb-4">
+            <h3 class="text-white font-bold text-[25px]">Share My Profile</h3>
+            <button class="close-btn cursor-pointer"><i class="fa-solid fa-x text-white font-bold text-[18px]"></i></button>
+          </div>
+          <p class="text-white font-semibold py-5">Share this via</p>
+
+          <!-- social links -->
+          <div class="flex flex-row justify-between items-center p-2">
+            <div class="w-[65px] h-[65px] rounded-[100%] flex justify-center items-center border text-center border-blue-400 hover:bg-blue-400 group cursor-pointer">
+              <i class="fa-brands fa-facebook-f text-blue-400 group-hover:text-white text-[25px]"></i>
+            </div>
+            <div class="w-[65px] h-[65px] rounded-[100%] border text-center flex justify-center items-center border-pink-400 hover:bg-pink-400 group cursor-pointer">
+              <i class="fa-brands fa-instagram text-pink-400 group-hover:text-white text-[25px]"></i>
+            </div>
+            <div class="w-[65px] h-[65px] rounded-[100%] border text-center flex justify-center items-center border-blue-300 hover:bg-blue-300 group cursor-pointer">
+              <i class="fa-brands fa-twitter text-blue-300 group-hover:text-white text-[25px]"></i>
+            </div>
+            <div class="w-[65px] h-[65px] rounded-[100%] border text-center flex justify-center items-center border-green-400 hover:bg-green-400 group cursor-pointer">
+              <i class="fa-brands fa-whatsapp text-green-400 group-hover:text-white text-[25px]"></i>
+            </div>
+            <div class="w-[65px] h-[65px] rounded-[100%] border text-center flex justify-center items-center border-blue-400 hover:bg-blue-400 group cursor-pointer">
+              <i class="fa-brands fa-telegram text-blue-400 group-hover:text-white text-[25px]"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- circle 1 -->
+      <div class="w-[150px] h-[150px] rounded-[50%] bg-red-400 absolute top-[5%] left-[33%] shadow-[0_0_25px_5px_#ff6467] circle1-animation"></div>
+
+      <!-- circle 2 -->
+      <div class="w-[200px] h-[200px] rounded-[50%] bg-purple-600 absolute bottom-[7%] right-[32%] shadow-[0_0_35px_7px_#9810fa] circle2-animation"></div>
+
+      <!-- card -->
+      <div class="bg-white/15 backdrop-blur-md w-[340px] flex flex-col items-center justify-center p-12 border rounded-xl border-slate-400 shadow-[0_0_5px_0_#fff]">
+        <img
+          src="https://img.magnific.com/free-photo/happy-man-student-with-afro-hairdo-shows-white-teeth-being-good-mood-after-classes_273609-16608.jpg?semt=ais_hybrid&w=740&q=80"
+          alt=""
+          class="w-[130px] h-[130px] rounded-[50%]"
+        />
+
+        <h3 class="text-white font-bold text-[30px] p-3">Zack Chow</h3>
+
+        <p class="text-white p-3 opacity-70">Founder, Ascend Coding</p>
+
+        <!-- button div -->
+        <div class="flex justify-center items-center gap-3 pt-5">
+          <button id="sharebtn" class="text-white border-2 border-slate-400 text-[10px] px-2 py-2 opacity-70 cursor-pointer hover:bg-white hover:text-black hover:font-bold group">
+            <i class="fa-solid fa-share text-white group-hover:text-black"></i> Share My Profile
+          </button>
+          <button class="text-white border-2 border-slate-400 text-[10px] px-8 py-2 opacity-70 cursor-pointer hover:bg-white hover:text-black hover:font-bold">Follow Me</button>
+        </div>
+      </div>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
