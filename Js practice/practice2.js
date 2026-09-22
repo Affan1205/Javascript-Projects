@@ -24,13 +24,14 @@
 
 // const elm = document.querySelector(".main")
 // elm.setAttribute("style","background:red")
-const elm2=document.getElementsByClassName("insideWrapper")
-for(let x of elm2)
+// const elm2=document.getElementsByClassName("insideWrapper")
+// for(let x of elm2)
 {
     // x.style.cssText += "background:pink"
     // x.style.borderRadius = "40px"
 }
-const elm = document.querySelector(".main")
-elm.classList.add("bg" ,"text")
-elm.classList.remove("bg")
-elm.classList.toggle("bg")
+// const elm = document.querySelector(".main")
+// elm.classList.add("bg" ,"text")
+// elm.classList.remove("bg")
+// elm.classList.toggle("bg")
+
