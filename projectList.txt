@@ -27,16 +27,18 @@
 
 
 // 🔸 Phase 1: Basic DOM Manipulation & Simple EventsFocus on selecting elements, listening for basic clicks or inputs, and changing text or styles.
-// 6 Number Counter – Introduces basic click events and variables.
-// 15 Random Color Generator – Practices mathematical random functions and styling updates.
-// 5 Real-time Character Counter – Introduces keyboard input events and live string length tracking.
+// 6 Number Counter – Introduces basic click events and variables.✅
+// 15 Random Color Generator – Practices mathematical random functions and styling updates.✅
+// 5 Real-time Character Counter – Introduces keyboard input events and live string length tracking.✅
 // 1 Tip Calculator – Combines user input values, math calculations, and updating the DOM.
+
 // 🔸 Phase 2: Core Logic, Arrays & Component StateFocus on working with data structures (arrays/strings), conditional logic, and simple toggles.
 // 4 Q&A Section (Accordion) – Introduces structural DOM traversal and conditional UI toggles.
 // 3 Tabs Section – Teaches element switching and matching array data to current UI states.
 // 14 Random Password Generator – Practices string manipulation and looping through character arrays.
 // 2 Basic Calculator – Builds complex conditional paths and functional chaining.
 // 16 Rock Paper Scissors – Integrates structural application logic, state, and randomized choices.
+
 // 🔸 Phase 3: Timers, Navigation & Local StorageFocus on time-based execution via intervals, dataindexing, and storing persistent settings.
 // 7 Digital Clock – Uses repetitive time-tracking intervals and the native JavaScript Date object.
 // 10 Image Slider – Introduces index navigation and tracking active states across an array.
@@ -44,6 +46,7 @@
 // 8 Simple Stopwatch – Teaches interval clearance and basic start/stop flag management.
 // 9 Pomodoro Timer – Challenges you to coordinate countdown timers with distinct application states.
 // 13 Dark Mode Toggle – Introduces localStorage to save persistent user choices across page reloads.
+
 // 🔸 Phase 4: Advanced CRUD & Asynchronous API DataFocus on complete data lifecycle management(Create, Read, Update, Delete) and fetching external network data.
 // 12 To-do List – Combines arrays, keyboard events, dynamically rendered items, and permanent localStorage arrays.
 // 18 Random Quote Generator – Introduces asynchronous workflows using basic fetch queries.

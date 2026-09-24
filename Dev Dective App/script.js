@@ -73,6 +73,8 @@ async function fetchUserData(userSearchInput) {
   //fetch data se pehle mein yeh check karunga ki user ka naam exist krta ha ki nahi
   //agar nahi krta toh mein searh not found ka message show krdunga
   //else fetch karenge data
+
+  //first hum check kr rahe ki jo user input aaya ho woh exist krta ha ki nahi
   let isprofileData = false;
   const response = await fetch(`https://api.github.com/users`);
   const data = await response.json();
@@ -81,6 +83,8 @@ async function fetchUserData(userSearchInput) {
       isprofileData = true;
     }
   });
+
+  //if user input is present in database we will fetch that user data using api call
   if (isprofileData) {
     try {
       const response = await fetch(`https://api.github.com/users/${userSearchInput}`);
