@@ -30,12 +30,12 @@
 // 6 Number Counter – Introduces basic click events and variables.✅
 // 15 Random Color Generator – Practices mathematical random functions and styling updates.✅
 // 5 Real-time Character Counter – Introduces keyboard input events and live string length tracking.✅
-// 1 Tip Calculator – Combines user input values, math calculations, and updating the DOM.
+// 1 Tip Calculator – Combines user input values, math calculations, and updating the DOM.✅
 
 // 🔸 Phase 2: Core Logic, Arrays & Component StateFocus on working with data structures (arrays/strings), conditional logic, and simple toggles.
-// 4 Q&A Section (Accordion) – Introduces structural DOM traversal and conditional UI toggles.
+// 4 Q&A Section (Accordion) – Introduces structural DOM traversal and conditional UI toggles.✅
 // 3 Tabs Section – Teaches element switching and matching array data to current UI states.
-// 14 Random Password Generator – Practices string manipulation and looping through character arrays.
+// 14 Random Password Generator – Practices string manipulation and looping through character arrays.✅
 // 2 Basic Calculator – Builds complex conditional paths and functional chaining.
 // 16 Rock Paper Scissors – Integrates structural application logic, state, and randomized choices.
 
