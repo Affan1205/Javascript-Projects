@@ -3,7 +3,7 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "Montserrat", sans-serif;
-  color:  white;
+  color: white;
 }
 .wrapper {
   width: 100vw;
@@ -11,22 +11,46 @@
   overflow-x: hidden;
   overflow-y: auto;
   background: #0b0f19;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .container {
   width: 90%;
   max-width: 1200px;
   border: 1px solid white;
   margin: 0 auto;
+  display: flex;
+  justify-content: center;
 }
-.step1{
-    display: none;
+.image {
+  width: 600px;
+  height: 500px;
 }
-.step2{
-    display: none;
+.content {
+  border: 1px solid white;
+  background-color: #2a374e;
 }
-.step3{
-    display: none;
+.button-container{
+  background: #2a374e;
+  display: flex;
 }
-.active{
-    display: block;
+.content-box{
+  padding: 20px;
+}
+.btn{
+  padding: 10px 20px;
+  background: #38bdf8 ;
+}
+.step1 {
+  display: none;
+}
+.step2 {
+  display: none;
+}
+.step3 {
+  display: none;
+}
+.active {
+  display: block;
 }

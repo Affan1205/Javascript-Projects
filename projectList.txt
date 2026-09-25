@@ -34,13 +34,13 @@
 
 // 🔸 Phase 2: Core Logic, Arrays & Component StateFocus on working with data structures (arrays/strings), conditional logic, and simple toggles.
 // 4 Q&A Section (Accordion) – Introduces structural DOM traversal and conditional UI toggles.✅
-// 3 Tabs Section – Teaches element switching and matching array data to current UI states.
+// 3 Tabs Section – Teaches element switching and matching array data to current UI states.✅
 // 14 Random Password Generator – Practices string manipulation and looping through character arrays.✅
-// 2 Basic Calculator – Builds complex conditional paths and functional chaining.
-// 16 Rock Paper Scissors – Integrates structural application logic, state, and randomized choices.
+// 2 Basic Calculator – Builds complex conditional paths and functional chaining.✅
+// 16 Rock Paper Scissors – Integrates structural application logic, state, and randomized choices.✅
 
 // 🔸 Phase 3: Timers, Navigation & Local StorageFocus on time-based execution via intervals, dataindexing, and storing persistent settings.
-// 7 Digital Clock – Uses repetitive time-tracking intervals and the native JavaScript Date object.
+// 7 Digital Clock – Uses repetitive time-tracking intervals and the native JavaScript Date object.✅
 // 10 Image Slider – Introduces index navigation and tracking active states across an array.
 // 11 Testimonial Slider – Synchronizes multi-element text and image components using index arrays.
 // 8 Simple Stopwatch – Teaches interval clearance and basic start/stop flag management.
