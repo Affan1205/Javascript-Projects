@@ -1,0 +1,87 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.wrapper {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #f8fafc; 
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.wrapperchanger {
+  background: #0f172a;
+}
+
+.btn {
+  background: #cbd5e1;
+  border: none;
+  width: 70px;
+  height: 36px;
+  border-radius: 50px; 
+  position: relative;
+  cursor: pointer;
+  outline: none;
+ 
+  box-shadow: inset 0 2px 5px rgba(0, 0, 0, 0.15),
+              0 2px 4px rgba(0, 0, 0, 0.05);
+  transition: all 0.4s ease;
+}
+
+.btnChanger {
+  background: #334155;
+  box-shadow: inset 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.btn:hover {
+  filter: brightness(1.05);
+}
+
+.circle {
+  position: absolute;
+  top: 50%;
+  left: 5px;
+  transform: translateY(-50%);
+  
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  background: #ffffff;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.15), 
+              0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.circleChanger {
+  background: #0f172a;
+}
+
+.animation {
+  animation: changeTheme 0.35s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+}
+
+@keyframes changeTheme {
+  0% {
+    left: 5px;
+  }
+  100% {
+    left: calc(100% - 31px); 
+  }
+}
+
+.animationBack {
+  animation: changeThemeBack 0.35s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+}
+
+@keyframes changeThemeBack {
+  0% {
+    left: calc(100% - 31px);
+  }
+  100% {
+    left: 5px;
+  }
+}
