@@ -1,0 +1,131 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #0f172a; 
+  color: #f1f5f9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+.wrapper {
+  width: 100%;
+  max-width: 480px;
+}
+
+.wrapper h1 {
+  font-size: 2.5rem;
+  font-weight: 800;
+  text-align: center;
+  margin-bottom: 24px;
+  letter-spacing: -0.03em;
+  background: linear-gradient(135deg, #38bdf8 0%, #818cf8 100%);
+  background-clip: text;
+  filter: drop-shadow(0px 2px 8px rgba(56, 189, 248, 0.15));
+}
+
+.main-container {
+  background-color: #1e293b; 
+  border-radius: 16px;
+  padding: 32px;
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.2), 0 10px 10px -5px rgba(0, 0, 0, 0.1);
+  border: 1px solid #334155;
+}
+
+.inputForm {
+  margin-bottom: 24px;
+}
+
+.userInputTasks {
+  width: 100%;
+  background-color: #0f172a;
+  border: 2px solid #334155;
+  border-radius: 10px;
+  padding: 14px 16px;
+  color: #ffffff;
+  font-size: 1rem;
+  transition: all 0.2s ease-in-out;
+}
+
+.userInputTasks:focus {
+  outline: none;
+  border-color: #38bdf8;
+  box-shadow: 0 0 0 3px rgba(56, 189, 248, 0.15);
+}
+
+.userInputTasks::placeholder {
+  color: #64748b;
+}
+
+.task-display-container {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.taskContainer {
+  align-items: center;
+  background-color: #334155;
+  padding: 14px 16px;
+  border-radius: 10px;
+  border: 1px solid transparent;
+  display: none; 
+}
+
+.taskContainer.active {
+  display: flex;
+}
+
+.taskContainer span {
+  flex-grow: 1;
+  font-size: 0.95rem;
+  color: #f8fafc;
+  margin-right: 12px;
+  word-break: break-word;
+}
+
+.taskContainer del {
+  color: #94a3b8;
+  text-decoration: line-through;
+  font-style: italic;
+}
+
+.editBtn, .deleteBtn {
+  font-family: 'Roboto', sans-serif;
+  font-size: 0.8rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  padding: 6px 12px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-left: 8px;
+  transition: all 0.2s ease;
+}
+.editBtn {
+  background-color: rgba(56, 189, 248, 0.1);
+  color: #38bdf8;
+}
+
+.editBtn:hover {
+  background-color: #38bdf8;
+  color: #0f172a;
+}
+
+.deleteBtn {
+  background-color: rgba(244, 63, 94, 0.1);
+  color: #f43f5e;
+}
+
+.deleteBtn:hover {
+  background-color: #f43f5e;
+  color: #ffffff;
+}

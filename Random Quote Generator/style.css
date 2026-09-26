@@ -1,0 +1,119 @@
+/* Reset and Base Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Edu QLD Hand", cursive, sans-serif;
+}
+
+.wrapper {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #333;
+  background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+}
+
+.quote-container {
+  width: 100%;
+  max-width: 550px;
+  background-color: #ffffff;
+  padding: 40px;
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  transition: transform 0.3s ease;
+}
+
+.quote-container:hover {
+  transform: translateY(-5px);
+}
+
+h1 {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #4a5568;
+  letter-spacing: 0.5px;
+  border-bottom: 2px solid #edf2f7;
+  padding-bottom: 12px;
+}
+
+.quote-text {
+  font-size: 1.5rem;
+  font-weight: 500;
+  line-height: 1.6;
+  color: #2d3748;
+  font-style: italic;
+  min-height: 60px; /* Prevents layout jump when text is empty */
+}
+
+.quote-text::before {
+  content: "“ ";
+  font-size: 2rem;
+  color: #a0aec0;
+}
+
+.quote-text::after {
+  content: " ”";
+  font-size: 2rem;
+  color: #a0aec0;
+}
+
+.quote-influencer {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #718096;
+  text-align: right;
+  display: block;
+}
+
+.quote-influencer::before {
+  content: "— ";
+}
+
+.btn {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: #ffffff;
+  border: none;
+  padding: 14px 28px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  border-radius: 8px;
+  cursor: pointer;
+  box-shadow: 0 4px 15px rgba(102, 126, 234, 0.4);
+  transition: all 0.2s ease;
+  align-self: center;
+}
+
+.btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(102, 126, 234, 0.6);
+  opacity: 0.95;
+}
+
+.btn:active {
+  transform: translateY(0);
+  box-shadow: 0 4px 10px rgba(102, 126, 234, 0.4);
+}
+
+@media (max-width: 480px) {
+  .quote-container {
+    padding: 24px;
+    gap: 18px;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  .quote-text {
+    font-size: 1.3rem;
+  }
+}
