@@ -53,3 +53,51 @@
 // 19 English Dictionary – Connects keyboard trigger inputs with external text API data feeds.✅
 // 17 Recipe Book App – Combines async fetch arrays with loop mapping filters.✅  
 // 20 Weather App – Forces handling of complex API responses, structural error parsing, and dynamic styling rules.✅
+
+----------------ALWAYS DO THOSE FOR REVISION 
+
+1. The DOM & State Classic: 
+Todo List AppThis is the ultimate litmus test for a fresher's ability to manipulate the browser 
+document object model (DOM) without relying on frameworks like React or Vue.What it proves:
+ You understand how to create, read, update, and delete (CRUD) HTML elements dynamically.
+ Key Features to Include:Adding and deleting tasks.Marking tasks as "completed".
+ Filtering tasks (All, Active, Completed).
+ Data Persistence: Saving tasks to localStorage so they don't disappear on page refresh.
+
+ 2. The Asynchronous Data Project: Weather App or Movie Search
+ Interviewers want to see if you can fetch data from the outside world and render it smoothly.
+ What it proves: Mastery over Fetch API / Promises, async/await, error handling 
+ (handling 404s or network drops), and parsing JSON objects.Key Features to Include:
+ An input field to search for a city or movie title.
+ Dynamic UI updates showing images (like weather icons or movie posters) and stats.
+ Debouncing: Implementing a search delay so you don't trigger an API call on every single keystroke.
+ 
+ 3. The Performance & Logic Project: E-Commerce CartInstead of building a whole store, you are often
+  asked to create a fully functional shopping cart using a mock local dataset.What it proves: 
+  Heavy data structures management (arrays of objects) and array methods (.map(), .filter(), .reduce()).
+  Key Features to Include:A product grid with "Add to Cart" buttons.
+  A cart sidebar that updates in real-time.Quantity selectors inside the cart (+/- buttons) that 
+  recalculate the total cost dynamically.
+  
+  4. The Time & Event Handling Project: Countdown Timer / StopwatchThis project looks deceptively 
+  simple but tests how you handle browser timing mechanics.
+  What it proves: A solid grasp of Asynchronous Web APIs like setInterval and clearInterval, along 
+  with handling exact state changes.
+  Key Features to Include:Start, Pause, and Reset buttons.
+  Proper formatting of time (e.g., forcing 05:09 instead of 5:9).Handling edge cases (e.g., ensuring hitting "Start" multiple times doesn't accidentally trigger duplicate intervals).
+  
+  5. The Algorithm & Logic Project: Calculator AppBuilding a standard calculator from scratch evaluates
+   your problem-solving capabilities.
+   What it proves: Input validation, string parsing, and edge-case handling (like dividing by zero).
+   Key Features to Include:Basic arithmetic operations (+, -, *, /).
+   A clean interface built with CSS Grid/Flexbox.Note: Avoid using the insecure eval() function to 
+   compute results; interviewers love to catch freshers using this shortcut. 
+   Write custom evaluation logic instead.
+   
+   💡 Pro-Tip for IntervewsIf an interviewer asks you to live-code one of these, do not just code in 
+   silence. Talk out loud to explain why you are choosing a specific approach 
+   (e.g., "I am using event delegation on the parent container here so I don't have to attach 
+   individual event listeners to every single new item").Are you preparing for a Frontend/Vanilla 
+   JS interview, or a Full-Stack interview that requires Node.js/Backend code? Let me know so I can 
+   share specific coding challenges or optimization techniques (like debouncing) they might ask you 
+   to implement on the spot.
