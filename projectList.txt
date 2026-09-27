@@ -51,5 +51,5 @@
 // 12 To-do List – Combines arrays, keyboard events, dynamically rendered items, and permanent localStorage arrays.✅
 // 18 Random Quote Generator – Introduces asynchronous workflows using basic fetch queries.✅
 // 19 English Dictionary – Connects keyboard trigger inputs with external text API data feeds.✅
-// 17 Recipe Book App – Combines async fetch arrays with loop mapping filters.✅
+// 17 Recipe Book App – Combines async fetch arrays with loop mapping filters.✅  
 // 20 Weather App – Forces handling of complex API responses, structural error parsing, and dynamic styling rules.✅

@@ -8,6 +8,8 @@ const image = document.querySelector(".image");
 const fwdImg = document.querySelector(".btnForward");
 const bckImg = document.querySelector(".btnBackward");
 let imgArr = [image1, image2, image3, image4, image5];
+
+//intially mujhe first image dikhana ha
 let currentImgIndex = 0;
 image.setAttribute("src", `${imgArr[currentImgIndex]}`);
 
@@ -16,6 +18,7 @@ fwdImg.addEventListener("click", () => {
   if (currentImgIndex < imgArr.length) {
     image.setAttribute("src", `${imgArr[currentImgIndex]}`);
   } else {
+    //first image show krdo
     currentImgIndex = 0;
     image.setAttribute("src", `${imgArr[currentImgIndex]}`);
   }
@@ -25,6 +28,7 @@ bckImg.addEventListener("click", () => {
   if (currentImgIndex >= 0) {
     image.setAttribute("src", `${imgArr[currentImgIndex]}`);
   } else {
+    //image show kr do
     currentImgIndex = imgArr.length - 1;
     image.setAttribute("src", `${imgArr[currentImgIndex]}`);
   }
